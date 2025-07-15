@@ -1,0 +1,1 @@
+We are working on a Natural Language Processing (NLP) problem focused on sentiment analysis using the Amazon Kindle reviews dataset. The goal is to preprocess the text data effectively and build a model capable of classifying user sentiments based on their review content.
