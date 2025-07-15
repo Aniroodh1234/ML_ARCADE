@@ -1,0 +1,10 @@
+pandas
+numpy
+seaborn
+matplotlib
+scikit-learn
+xgboost
+catboost
+dill
+flask
+# -e .  # installs your project in "editable mode"
