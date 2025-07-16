@@ -1,0 +1,1 @@
+This comprehensive deep learning project focuses on forecasting customer churn within a banking context by leveraging an Artificial Neural Network (ANN). The model processes a variety of inputs — including demographic information, financial activity, and customer behavior — to predict whether a customer is likely to exit the bank or remain engaged.
