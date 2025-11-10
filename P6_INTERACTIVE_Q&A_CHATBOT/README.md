@@ -21,6 +21,7 @@ This project is designed for developers, researchers, and enthusiasts who want t
 
 ```
 [Sidebar Settings]     [Main Chat Interface]
+![image alt](https://github.com/Aniroodh1234/ML_ARCADE/blob/5b04720048388141df44a6ef9e94e75bdbc6c713/P6_INTERACTIVE_Q%26A_CHATBOT/Screenshot%202025-11-10%20222435.png)
 ```
 
 ## Installation
