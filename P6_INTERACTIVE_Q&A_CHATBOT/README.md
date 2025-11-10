@@ -97,24 +97,6 @@ streamlit run app.py
 | `qwen/qwen3-32b` | Qwen 3 32B model |
 
 
-
-```python
-def generate_response(question, api_key, engine, temperature, max_tokens):
-    """
-    Generates AI response for user questions
-    
-    Parameters:
-    - question (str): User's input question
-    - api_key (str): Groq API key
-    - engine (str): Selected AI model
-    - temperature (float): Creativity level (0.0-1.0)
-    - max_tokens (int): Maximum response length (50-300)
-    
-    Returns:
-    - str: AI-generated response
-    """
-```
-
 ## Deployment
 
 ### Deploy on Streamlit Cloud
@@ -155,7 +137,7 @@ Your feedback helps us improve this project!
 
 ## Links
 
-- **LinkedIn**: linkedin.com/in/aniroodh-padhee-a7b639245
+- **LinkedIn**: [linkedin.com/in/aniroodh-padhee-a7b639245](https://www.linkedin.com/in/aniroodh-padhee-a7b639245/)
 - **Email**: aniroodhroh2020@gmail.com
 
 
