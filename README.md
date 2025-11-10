@@ -12,6 +12,7 @@ This repository serves as a centralized hub for my machine learning journey, con
 
 Machine Learning is a subset of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed. It focuses on developing algorithms that can access data, learn from it, and make predictions or decisions.
 
+```mermaid
 graph TD
     A[Artificial Intelligence] --> B[Machine Learning]
     B --> C[Supervised Learning]
@@ -21,6 +22,9 @@ graph TD
     C --> G[Regression]
     D --> H[Clustering]
     D --> I[Dimensionality Reduction]
+```
+
+---
 
 ## Technology Stack
 
@@ -50,6 +54,7 @@ graph TD
 
 ## Machine Learning Workflow
 
+```mermaid
 flowchart TD
     A[Data Collection] --> B[Data Cleaning]
     B --> C[Exploratory Data Analysis]
@@ -66,6 +71,7 @@ flowchart TD
     style A fill:#e1f5ff
     style J fill:#d4edda
     style H fill:#fff3cd
+```
 
 ---
 
@@ -93,6 +99,7 @@ Projects working with unlabeled data to discover hidden patterns and structures.
 
 ## Key Concepts Explored
 
+```mermaid
 graph TB
     subgraph Data["Data Preprocessing"]
         A1[Data Cleaning]
@@ -117,8 +124,6 @@ graph TB
     
     subgraph Advanced["Advanced Techniques"]
         D1[Ensemble Methods]
-        D2[Transfer Learning]
-        D3[Neural Networks]
         D4[Feature Selection]
     end
     
@@ -126,11 +131,13 @@ graph TB
     style Training fill:#f3e5f5
     style Metrics fill:#fff9c4
     style Advanced fill:#e8f5e9
+```
 
---- 
+---
 
 ## Model Development Pipeline
 
+```mermaid
 flowchart LR
     A[Raw Data] --> B[Data Processing]
     B --> C[Train Model]
@@ -146,6 +153,7 @@ flowchart LR
     style D fill:#fff9c4
     style G fill:#e8f5e9
     style H fill:#c8e6c9
+```
 
 ---
 
@@ -172,6 +180,7 @@ Understanding which metrics to use for different problems:
 | Multi-class Classification | Accuracy, Macro/Micro F1, Confusion Matrix |
 | Regression | MSE, RMSE, MAE, R-squared, MAPE |
 | Clustering | Silhouette Score, Davies-Bouldin Index |
+| Ranking | NDCG, MAP, MRR |
 
 ---
 
@@ -193,5 +202,11 @@ Understanding which metrics to use for different problems:
 - Automated machine learning (AutoML)
 - Model explainability and interpretability tools
 - Production-ready deployment pipelines
+
+---
+
+## Contributing
+
+Contributions, issues, and feature requests are welcome. Feel free to check the issues page if you want to contribute.
 
 ---
