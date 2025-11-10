@@ -12,7 +12,6 @@ This repository serves as a centralized hub for my machine learning journey, con
 
 Machine Learning is a subset of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed. It focuses on developing algorithms that can access data, learn from it, and make predictions or decisions.
 
-```mermaid
 graph TD
     A[Artificial Intelligence] --> B[Machine Learning]
     B --> C[Supervised Learning]
@@ -22,8 +21,6 @@ graph TD
     C --> G[Regression]
     D --> H[Clustering]
     D --> I[Dimensionality Reduction]
-```
-
 
 ## Technology Stack
 
@@ -53,19 +50,22 @@ graph TD
 
 ## Machine Learning Workflow
 
-```mermaid
-graph LR
-    A[Data Collection] --> B[Data Preprocessing]
+flowchart TD
+    A[Data Collection] --> B[Data Cleaning]
     B --> C[Exploratory Data Analysis]
     C --> D[Feature Engineering]
-    D --> E[Model Selection]
+    D --> E[Split Data]
     E --> F[Model Training]
     F --> G[Model Evaluation]
-    G --> H{Performance Satisfactory?}
-    H -->|No| D
-    H -->|Yes| I[Model Deployment]
-    I --> J[Monitoring & Maintenance]
-```
+    G --> H{Good Performance?}
+    H -->|No| I[Tune Hyperparameters]
+    I --> F
+    H -->|Yes| J[Model Deployment]
+    J --> K[Monitor Performance]
+    
+    style A fill:#e1f5ff
+    style J fill:#d4edda
+    style H fill:#fff3cd
 
 ---
 
@@ -89,51 +89,63 @@ Projects working with unlabeled data to discover hidden patterns and structures.
 - Data compression
 - Pattern discovery
 
-
+---
 
 ## Key Concepts Explored
 
-```mermaid
-mindmap
-  root((Machine Learning))
-    Data Preprocessing
-      Data Cleaning
-      Feature Scaling
-      Encoding
-      Missing Values
-    Model Training
-      Train-Test Split
-      Cross Validation
-      Hyperparameter Tuning
-      Regularization
-    Evaluation Metrics
-      Accuracy
-      Precision-Recall
-      F1-Score
-      ROC-AUC
+graph TB
+    subgraph Data["Data Preprocessing"]
+        A1[Data Cleaning]
+        A2[Feature Scaling]
+        A3[Encoding]
+        A4[Handling Missing Values]
+    end
+    
+    subgraph Training["Model Training"]
+        B1[Train-Test Split]
+        B2[Cross Validation]
+        B3[Hyperparameter Tuning]
+        B4[Regularization]
+    end
+    
+    subgraph Metrics["Evaluation Metrics"]
+        C1[Accuracy]
+        C2[Precision & Recall]
+        C3[F1-Score]
+        C4[ROC-AUC]
+    end
+    
+    subgraph Advanced["Advanced Techniques"]
+        D1[Ensemble Methods]
+        D2[Transfer Learning]
+        D3[Neural Networks]
+        D4[Feature Selection]
+    end
+    
+    style Data fill:#e3f2fd
+    style Training fill:#f3e5f5
+    style Metrics fill:#fff9c4
+    style Advanced fill:#e8f5e9
 
-```
+--- 
 
 ## Model Development Pipeline
 
-```mermaid
-sequenceDiagram
-    participant Data
-    participant Preprocessing
-    participant Model
-    participant Evaluation
-    participant Deployment
-
-    Data->>Preprocessing: Raw Dataset
-    Preprocessing->>Preprocessing: Clean & Transform
-    Preprocessing->>Model: Processed Data
-    Model->>Model: Train Algorithm
-    Model->>Evaluation: Predictions
-    Evaluation->>Evaluation: Calculate Metrics
-    Evaluation->>Model: Feedback for Tuning
-    Evaluation->>Deployment: Final Model
-    Deployment->>Deployment: Serve Predictions
-```
+flowchart LR
+    A[Raw Data] --> B[Data Processing]
+    B --> C[Train Model]
+    C --> D[Evaluate]
+    D --> E{Meets Requirements?}
+    E -->|No| F[Adjust & Retrain]
+    F --> C
+    E -->|Yes| G[Deploy Model]
+    G --> H[Production]
+    
+    style A fill:#ffebee
+    style C fill:#e3f2fd
+    style D fill:#fff9c4
+    style G fill:#e8f5e9
+    style H fill:#c8e6c9
 
 ---
 
